@@ -12,7 +12,7 @@
   align-items: center;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--Grey-light-2);
+  border-bottom: 1px solid var(--Grey-light-2);
 }
 .sidebar {
   display: flex;
@@ -25,7 +25,7 @@
   display: flex;
 }
 .book-view {
-  background-color: red;
+  // background-color: red;
   flex: 1;
   height: 80rem;
 }
