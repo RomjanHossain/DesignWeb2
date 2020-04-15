@@ -1,0 +1,23 @@
+{
+  "name": "designweb2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "scripts": {
+    "comp": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomjanHossain/DesignWeb2.git"
+  },
+  "author": "Romjan D. Hossain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomjanHossain/DesignWeb2/issues"
+  },
+  "homepage": "https://github.com/RomjanHossain/DesignWeb2#readme"
+}
