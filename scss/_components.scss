@@ -167,3 +167,104 @@
   color: var(--Grey-light-3);
   padding: 2.5rem;
 }
+
+//////////////////////////
+////////Gallery/////////////
+.gallery {
+  display: flex;
+  &__img {
+    width: 100%;
+    display: block;
+  }
+}
+
+/////////////////////////////////////////
+///////////book overive/////////
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--Grey-light-3);
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+  }
+  &__stars {
+    // flex: 1;
+    margin-right: auto;
+    display: flex;
+  }
+  &__icon-star,
+  &__icon-loc {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--Primary);
+  }
+  &__icon-loc {
+    margin-right: 0.5rem;
+  }
+  &__location {
+    font-size: 1.2rem;
+    display: flex;
+    vertical-align: center;
+  }
+  &__rating {
+    background-color: var(--Primary);
+    margin-left: 3rem;
+    color: #fff;
+    align-self: stretch;
+    padding: 0 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: -3px;
+
+    &-avarage {
+      font-size: 2.25rem;
+      font-weight: 100;
+    }
+    &-count {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/////////////////////////////////////
+//////////btn inline/////////////////
+.btn-inline {
+  border: none;
+  color: var(--Primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    color: var(--Grey-dark-1);
+  }
+  &:focus {
+    outline: none;
+    animation: ss 1s infinite;
+  }
+}
+
+@keyframes ss {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
